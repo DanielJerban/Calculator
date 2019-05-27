@@ -116,11 +116,6 @@ namespace Calculator
                 if (item.Text == e.KeyChar.ToString())
                 {
                     item.Focus();
-                    item.ForeColor = Color.Red; 
-                }
-                else
-                {
-                    item.ForeColor = Color.Black; 
                 }
             }
 
@@ -169,6 +164,13 @@ namespace Calculator
             }
         }
 
-
+        private void frmCalculate_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnequal_Click(null, null);
+                btnequal.Focus(); 
+            }
+        }
     }
 }

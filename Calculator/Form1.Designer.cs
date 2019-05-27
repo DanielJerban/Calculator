@@ -311,6 +311,7 @@
             this.Name = "frmCalculate";
             this.Text = "Calculator";
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCalculate_KeyPress);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmCalculate_KeyUp);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
