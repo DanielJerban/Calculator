@@ -75,7 +75,7 @@
             this.panel1.Location = new System.Drawing.Point(-1, 125);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(277, 262);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // btnclear
             // 
@@ -83,7 +83,7 @@
             this.btnclear.Location = new System.Drawing.Point(142, 3);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(61, 46);
-            this.btnclear.TabIndex = 1;
+            this.btnclear.TabIndex = 17;
             this.btnclear.Text = "Clear";
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
@@ -94,7 +94,7 @@
             this.btndevide.Location = new System.Drawing.Point(209, 3);
             this.btndevide.Name = "btndevide";
             this.btndevide.Size = new System.Drawing.Size(61, 46);
-            this.btndevide.TabIndex = 1;
+            this.btndevide.TabIndex = 14;
             this.btndevide.Text = "/";
             this.btndevide.UseVisualStyleBackColor = true;
             this.btndevide.Click += new System.EventHandler(this.Operators);
@@ -105,7 +105,7 @@
             this.btnmultiplie.Location = new System.Drawing.Point(209, 55);
             this.btnmultiplie.Name = "btnmultiplie";
             this.btnmultiplie.Size = new System.Drawing.Size(61, 46);
-            this.btnmultiplie.TabIndex = 1;
+            this.btnmultiplie.TabIndex = 13;
             this.btnmultiplie.Text = "*";
             this.btnmultiplie.UseVisualStyleBackColor = true;
             this.btnmultiplie.Click += new System.EventHandler(this.Operators);
@@ -116,7 +116,7 @@
             this.btn9.Location = new System.Drawing.Point(142, 55);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(61, 46);
-            this.btn9.TabIndex = 1;
+            this.btn9.TabIndex = 9;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -127,7 +127,7 @@
             this.btnminuse.Location = new System.Drawing.Point(209, 107);
             this.btnminuse.Name = "btnminuse";
             this.btnminuse.Size = new System.Drawing.Size(61, 46);
-            this.btnminuse.TabIndex = 1;
+            this.btnminuse.TabIndex = 12;
             this.btnminuse.Text = "-";
             this.btnminuse.UseVisualStyleBackColor = true;
             this.btnminuse.Click += new System.EventHandler(this.Operators);
@@ -138,7 +138,7 @@
             this.btn6.Location = new System.Drawing.Point(142, 107);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(61, 46);
-            this.btn6.TabIndex = 1;
+            this.btn6.TabIndex = 6;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -149,7 +149,7 @@
             this.btn8.Location = new System.Drawing.Point(75, 55);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(61, 46);
-            this.btn8.TabIndex = 1;
+            this.btn8.TabIndex = 8;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
             this.btn8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -160,7 +160,7 @@
             this.btnequal.Location = new System.Drawing.Point(209, 211);
             this.btnequal.Name = "btnequal";
             this.btnequal.Size = new System.Drawing.Size(61, 46);
-            this.btnequal.TabIndex = 1;
+            this.btnequal.TabIndex = 15;
             this.btnequal.Text = "=";
             this.btnequal.UseVisualStyleBackColor = true;
             this.btnequal.Click += new System.EventHandler(this.btnequal_Click);
@@ -171,7 +171,7 @@
             this.btnplus.Location = new System.Drawing.Point(209, 159);
             this.btnplus.Name = "btnplus";
             this.btnplus.Size = new System.Drawing.Size(61, 46);
-            this.btnplus.TabIndex = 1;
+            this.btnplus.TabIndex = 11;
             this.btnplus.Text = "+";
             this.btnplus.UseVisualStyleBackColor = true;
             this.btnplus.Click += new System.EventHandler(this.Operators);
@@ -182,7 +182,7 @@
             this.btnbackspace.Location = new System.Drawing.Point(8, 3);
             this.btnbackspace.Name = "btnbackspace";
             this.btnbackspace.Size = new System.Drawing.Size(128, 46);
-            this.btnbackspace.TabIndex = 1;
+            this.btnbackspace.TabIndex = 16;
             this.btnbackspace.Text = "<---------------";
             this.btnbackspace.UseVisualStyleBackColor = true;
             this.btnbackspace.Click += new System.EventHandler(this.btn_Click);
@@ -193,7 +193,7 @@
             this.btn5.Location = new System.Drawing.Point(75, 107);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(61, 46);
-            this.btn5.TabIndex = 1;
+            this.btn5.TabIndex = 5;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -204,7 +204,7 @@
             this.btndot.Location = new System.Drawing.Point(142, 211);
             this.btndot.Name = "btndot";
             this.btndot.Size = new System.Drawing.Size(61, 46);
-            this.btndot.TabIndex = 1;
+            this.btndot.TabIndex = 10;
             this.btndot.Text = ".";
             this.btndot.UseVisualStyleBackColor = true;
             this.btndot.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btndot_MouseClick);
@@ -215,7 +215,7 @@
             this.btn7.Location = new System.Drawing.Point(8, 55);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(61, 46);
-            this.btn7.TabIndex = 1;
+            this.btn7.TabIndex = 7;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -226,7 +226,7 @@
             this.btn3.Location = new System.Drawing.Point(142, 159);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(61, 46);
-            this.btn3.TabIndex = 1;
+            this.btn3.TabIndex = 3;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -237,7 +237,7 @@
             this.btnzero.Location = new System.Drawing.Point(8, 211);
             this.btnzero.Name = "btnzero";
             this.btnzero.Size = new System.Drawing.Size(128, 46);
-            this.btnzero.TabIndex = 1;
+            this.btnzero.TabIndex = 0;
             this.btnzero.Text = "0";
             this.btnzero.UseVisualStyleBackColor = true;
             this.btnzero.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -248,7 +248,7 @@
             this.btn4.Location = new System.Drawing.Point(8, 107);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(61, 46);
-            this.btn4.TabIndex = 1;
+            this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -259,7 +259,7 @@
             this.btn2.Location = new System.Drawing.Point(75, 159);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(61, 46);
-            this.btn2.TabIndex = 1;
+            this.btn2.TabIndex = 2;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Numbers_MouseClick);
@@ -281,8 +281,8 @@
             this.btnpower.Location = new System.Drawing.Point(7, 73);
             this.btnpower.Name = "btnpower";
             this.btnpower.Size = new System.Drawing.Size(128, 46);
-            this.btnpower.TabIndex = 1;
-            this.btnpower.Text = "ON";
+            this.btnpower.TabIndex = 0;
+            this.btnpower.Text = "OFF";
             this.btnpower.UseVisualStyleBackColor = true;
             this.btnpower.Click += new System.EventHandler(this.btnpower_Click);
             // 

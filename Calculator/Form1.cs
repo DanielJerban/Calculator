@@ -57,7 +57,10 @@ namespace Calculator
 
         private void btnequal_Click(object sender, EventArgs e)
         {
-            number2 = Convert.ToDouble(txtnumber.Text);
+            if (txtnumber.Text != "")
+            {
+                number2 = Convert.ToDouble(txtnumber.Text);
+            }
 
             switch (Operator)
             {
@@ -143,6 +146,15 @@ namespace Calculator
             }
         }
 
+        private void frmCalculate_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnequal_Click(null, null);
+                btnequal.Focus(); 
+            }
+        }
+
         private void btnpower_Click(object sender, EventArgs e)
         {
             foreach (Button item in panel1.Controls)
@@ -151,25 +163,19 @@ namespace Calculator
                 {
                     item.Enabled = false;
                     btnbackspace.Enabled = false;
+                    btnbackspace.Enabled = false;
                     btnclear.Enabled = false;
-                    btnpower.Text = "ON"; 
+                    this.KeyPreview = false;
+                    btnpower.Text = "ON";
                 }
                 else
                 {
                     item.Enabled = true;
                     btnbackspace.Enabled = true;
                     btnclear.Enabled = true;
-                    btnpower.Text = "OFF"; 
+                    this.KeyPreview = true;
+                    btnpower.Text = "OFF";
                 }
-            }
-        }
-
-        private void frmCalculate_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnequal_Click(null, null);
-                btnequal.Focus(); 
             }
         }
     }
