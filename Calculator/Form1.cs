@@ -24,12 +24,22 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void Numbers(object sender, EventArgs e)
+        //private void Numbers(object sender, EventArgs e)
+        //{
+        //    if (flag == true)
+        //    {
+        //        txtnumber.Text = "";
+        //        flag = false; 
+        //    }
+        //    txtnumber.Text += ((Button)sender).Text;
+        //}
+
+        private void Numbers_MouseClick(object sender, MouseEventArgs e)
         {
             if (flag == true)
             {
                 txtnumber.Text = "";
-                flag = false; 
+                flag = false;
             }
             txtnumber.Text += ((Button)sender).Text;
         }
@@ -69,7 +79,12 @@ namespace Calculator
             Operator = null; 
         }
 
-        private void btndot_Click(object sender, EventArgs e)
+        //private void btndot_Click(object sender, EventArgs e)
+        //{
+        //    txtnumber.Text += ((Button)sender).Text;
+        //}
+
+        private void btndot_MouseClick(object sender, MouseEventArgs e)
         {
             txtnumber.Text += ((Button)sender).Text;
         }
@@ -91,12 +106,7 @@ namespace Calculator
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            txtnumber.Text = "";
-        }
-
-        private void btnpower_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            MessageBox.Show(e.KeyChar.ToString());
+            
         }
 
         private void frmCalculate_KeyPress(object sender, KeyPressEventArgs e)
@@ -118,11 +128,11 @@ namespace Calculator
             tmp.Text = e.KeyChar.ToString(); 
             if (e.KeyChar >= '0' && e.KeyChar <= '9')
             {
-                Numbers(tmp, null); 
+                Numbers_MouseClick(tmp, null); 
             }
             else if (e.KeyChar == '.')
             {
-                btndot_Click(tmp, null); 
+                btndot_MouseClick(tmp, null); 
             }
             else if (e.KeyChar == '/'|| e.KeyChar == '*' || e.KeyChar == '+' || e.KeyChar == '-')
             {
@@ -137,5 +147,28 @@ namespace Calculator
                 btn_Click(null, null); 
             }
         }
+
+        private void btnpower_Click(object sender, EventArgs e)
+        {
+            foreach (Button item in panel1.Controls)
+            {
+                if (item.Enabled == true)
+                {
+                    item.Enabled = false;
+                    btnbackspace.Enabled = false;
+                    btnclear.Enabled = false;
+                    btnpower.Text = "ON"; 
+                }
+                else
+                {
+                    item.Enabled = true;
+                    btnbackspace.Enabled = true;
+                    btnclear.Enabled = true;
+                    btnpower.Text = "OFF"; 
+                }
+            }
+        }
+
+
     }
 }
