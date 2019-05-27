@@ -83,12 +83,59 @@ namespace Calculator
 
         private void btn_Click(object sender, EventArgs e)
         {
-            txtnumber.Text = txtnumber.Text.Substring(0, txtnumber.Text.Length - 1);
+            if (txtnumber.Text.Length > 0)
+            {
+                txtnumber.Text = txtnumber.Text.Substring(0, txtnumber.Text.Length - 1);
+            }
         }
 
         private void btnclear_Click(object sender, EventArgs e)
         {
             txtnumber.Text = "";
+        }
+
+        private void btnpower_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            MessageBox.Show(e.KeyChar.ToString());
+        }
+
+        private void frmCalculate_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            foreach (Button item in panel1.Controls)
+            {
+                if (item.Text == e.KeyChar.ToString())
+                {
+                    item.Focus();
+                    item.ForeColor = Color.Red; 
+                }
+                else
+                {
+                    item.ForeColor = Color.Black; 
+                }
+            }
+
+            Button tmp = new Button();
+            tmp.Text = e.KeyChar.ToString(); 
+            if (e.KeyChar >= '0' && e.KeyChar <= '9')
+            {
+                Numbers(tmp, null); 
+            }
+            else if (e.KeyChar == '.')
+            {
+                btndot_Click(tmp, null); 
+            }
+            else if (e.KeyChar == '/'|| e.KeyChar == '*' || e.KeyChar == '+' || e.KeyChar == '-')
+            {
+                Operators(tmp, null); 
+            }
+            else if (e.KeyChar == '=')
+            {
+                btnequal_Click(null, null); 
+            }
+            else if (e.KeyChar == '\b')
+            {
+                btn_Click(null, null); 
+            }
         }
     }
 }

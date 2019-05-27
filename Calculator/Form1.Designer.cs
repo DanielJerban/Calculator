@@ -275,6 +275,7 @@
             this.btnpower.TabIndex = 1;
             this.btnpower.Text = "ON";
             this.btnpower.UseVisualStyleBackColor = true;
+            this.btnpower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnpower_KeyPress);
             // 
             // txtnumber
             // 
@@ -307,9 +308,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnpower);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "frmCalculate";
             this.Text = "Calculator";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmCalculate_KeyPress);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
