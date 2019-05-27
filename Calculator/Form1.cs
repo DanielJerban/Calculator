@@ -17,6 +17,8 @@ namespace Calculator
         double equal;
         string Operator;
 
+        bool flag; 
+
         public frmCalculate()
         {
             InitializeComponent();
@@ -24,15 +26,23 @@ namespace Calculator
 
         private void Numbers(object sender, EventArgs e)
         {
+            if (flag == true)
+            {
+                txtnumber.Text = "";
+                flag = false; 
+            }
             txtnumber.Text += ((Button)sender).Text;
         }
 
         private void Operators(object sender, EventArgs e)
         {
+            if (Operator != null)
+            {
+                btnequal_Click(null, null); 
+            }
             number1 = Convert.ToDouble(txtnumber.Text);
             Operator = ((Button)sender).Text;
-            txtnumber.Text = "";
-
+            flag = true; 
         }
 
         private void btnequal_Click(object sender, EventArgs e)
@@ -56,6 +66,7 @@ namespace Calculator
             }
 
             txtnumber.Text = equal.ToString();
+            Operator = null; 
         }
 
         private void btndot_Click(object sender, EventArgs e)
